@@ -18,7 +18,9 @@ Source https://codepen.io/ismailvtl/pen/KrVrbp
 }
 @media (prefers-color-scheme: dark) {
     :root {
-        --calendar-font-color: #D3D3D3; 
+        --calendar-font-color: #EDEDED; 
+        --calendar-current-date-color: #FF7369;
+        --calendar-today-color: #FF7369;
         --weekdays-border-bottom-color: #373737;
     }
 }
@@ -28,14 +30,14 @@ Source https://codepen.io/ismailvtl/pen/KrVrbp
 }
 
     body{
-    background-color: transparent;
+    background-color: transparent !important;
     }
 .calendar {
     font-family: 'Nunito', sans-serif;
     position: relative;
     max-width: 400px; /*change as per your design need */
     min-width: 320px;
-    background: var(--calendar-bg-color);
+    background: transparent !important;
     color: var(--calendar-font-color);
     margin: 20px auto;
     box-sizing: border-box;
@@ -140,7 +142,7 @@ Source https://codepen.io/ismailvtl/pen/KrVrbp
     text-decoration: none;
     padding: 4px 12px;
     display: inline-block;
-    background: var(--calendar-nextprev-bg-color);
+    background: transparent !important;
     margin: 0 0 10px 0;
 }
 </style>
