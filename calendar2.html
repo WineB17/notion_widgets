@@ -7,14 +7,23 @@ Source https://codepen.io/ismailvtl/pen/KrVrbp
     
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,600');
 :root {
-    --calendar-bg-color: #FFF;
+    --calendar-bg-color: transparent !important;;
     --calendar-font-color: #292623;
     --weekdays-border-bottom-color: #404040;
     --calendar-date-hover-color: #EB5757;
     --calendar-current-date-color: #FF7369;
     --calendar-today-color: #FF7369;
     --calendar-today-innerborder-color: #FFF;
-    --calendar-nextprev-bg-color: #FFF;
+    --calendar-nextprev-bg-color: transparent !important;
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+        --calendar-font-color: #EDEDED;
+        --calendar-current-date-color: #D44C47;
+        --calendar-today-color: #D44C47;
+        --weekdays-border-bottom-color: #373737;
+        --calendar-today-innerborder-color: #191919;
+    }
 }
 
 * {
@@ -22,15 +31,15 @@ Source https://codepen.io/ismailvtl/pen/KrVrbp
     margin: 0;
 }
 
-    body{
-    background-color: #FFF;
-    }
+    body {
+    background-color: transparent !important; 
+}
 .calendar {
     font-family: 'Nunito', sans-serif;
     position: relative;
     max-width: 400px; /*change as per your design need */
     min-width: 320px;
-    background: var(--calendar-bg-color);
+    background: transparent !important;
     color: var(--calendar-font-color);
     margin: 20px auto;
     box-sizing: border-box;
@@ -135,7 +144,7 @@ Source https://codepen.io/ismailvtl/pen/KrVrbp
     text-decoration: none;
     padding: 4px 12px;
     display: inline-block;
-    background: var(--calendar-nextprev-bg-color);
+    background: transparent !important;
     margin: 0 0 10px 0;
 }
 </style>
