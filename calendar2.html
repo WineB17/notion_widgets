@@ -7,14 +7,14 @@ Source https://codepen.io/ismailvtl/pen/KrVrbp
     
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,600');
 :root {
-    --calendar-bg-color: transparent;
+    --calendar-bg-color: transparent !important;;
     --calendar-font-color: #292623;
     --weekdays-border-bottom-color: #404040;
     --calendar-date-hover-color: #EB5757;
     --calendar-current-date-color: #FF7369;
     --calendar-today-color: #FF7369;
     --calendar-today-innerborder-color: transparent;
-    --calendar-nextprev-bg-color: transparent;
+    --calendar-nextprev-bg-color: transparent !important;
 }
 @media (prefers-color-scheme: dark) {
     :root {
@@ -28,11 +28,12 @@ Source https://codepen.io/ismailvtl/pen/KrVrbp
 * {
     padding: 0;
     margin: 0;
+    background: transparent !important;
 }
 
-    body{
-    background-color: transparent !important;
-    }
+    html, body {
+    background-color: transparent !important; 
+}
 .calendar {
     font-family: 'Nunito', sans-serif;
     position: relative;
