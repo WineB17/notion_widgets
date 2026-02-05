@@ -19,19 +19,25 @@ Source https://codepen.io/ismailvtl/pen/KrVrbp
 @media (prefers-color-scheme: dark) {
     :root {
         --calendar-font-color: #EDEDED;
-        --weekdays-border-bottom-color: #D3D3D3;
         --calendar-current-date-color: #D44C47;
         --calendar-today-color: #D44C47;
         --weekdays-border-bottom-color: #373737;
+    }
+    html, body, .calendar {
+        background-color: #191919 !important; 
+    }
+}
+@media (prefers-color-scheme: light) {
+    html, body, .calendar {
+        background-color: transparent !important;
     }
 }
 * {
     padding: 0;
     margin: 0;
-    background: transparent !important;
 }
 
-    html, body {
+    body {
     background-color: transparent !important; 
 }
 .calendar {
